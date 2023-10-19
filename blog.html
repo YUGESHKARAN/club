@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Cell DSU</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+   
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/E-cell-logo.png" class="logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="event.html">EVENTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()" ></i>
+        </nav>
+         
+     
+        <h1><span>Our</span> Ideas and Road Maps</h1>
+
+
+    </section>
+
+    <!------   Blog Content --------->
+    <div class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/roadmap.jpg" alt="">
+                <h2>Our Ideas and Plans</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta, 
+                    doloremque maxime dolorum laudantium omnis expedita, 
+                    debitis aspernatur quaerat natus corrupti? Nulla voluptatum autem
+                     recusandae perferendis, accusamus ea consectetur iusto.
+                </p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi 
+                    animi assumenda deserunt nisi ut.
+                     Sequi nostrum tempora, illo in debitis fuga. Distinctio magni
+                      vel iure quaerat, harum neque doloremque.
+                </p>
+
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi 
+                    animi assumenda deserunt nisi ut.
+                     Sequi nostrum tempora, illo in debitis fuga. Distinctio magni
+                      vel iure quaerat, harum neque doloremque.
+                </p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fugit libero dolore in delectus corporis vel quo, sequi 
+                    veritatis hic adipisci voluptate, quod nam. Laborum doloribus 
+                    mollitia corporis suscipit eum qui consequatur,
+                     quia repellat saepe quos placeat incidunt harum assumenda!
+                    
+                </p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form  class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea  rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn gold-btn">POST COMMENT</button>
+                    </form>
+                </div>
+        
+            </div>
+
+            <div class="blog-right">
+                <h3>Post Category</h3>
+                <div>
+                    <span>Business Analystics</span>
+                    <span>50</span>
+                </div>
+                <div>
+                    <span>Business Analystics</span>
+                    <span>50</span>
+                </div>
+   
+                <div>
+                    <span>Business Analystics</span>
+                    <span>50</span>
+                </div>
+
+                <div>
+                    <span>Business Analystics</span>
+                    <span>50</span>
+                </div>
+                <div>
+                    <span>Business Analystics</span>
+                    <span>50</span>
+                </div>
+                <div>
+                    <span>Business Analystics</span>
+                    <span>50</span>
+                </div>
+                <div>
+                    <span>Business Analystics</span>
+                    <span>50</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+   <!----- footer -->
+   <section class="footer">
+     <h4>Our Events</h4>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Dolore autem vitae non sint rerum quibusdam iusto earum modi. <br> Ab, nesciunt?
+         Temporibus maiores enim fugit in.
+    </p>
+    <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+   </section>
+ 
+
+
+
+
+
+
+
+
+<!---JavaScript for Toggle Menu-->
+
+<script>
+    var navlinks = document.getElementById("navlinks");
+    
+    function showmenu(){
+        navlinks.style.right="0";
+    }
+
+    function hidemenu(){
+        navlinks.style.right="-200px";
+    }
+
+
+
+</script>    
+</body>
+</html>
