@@ -4,7 +4,7 @@ $visitor_email = $_POST['email'];
 $idea_domain = $_POST['domaim'];
 $message = $_POST['message'];
 
-$email_from = '21aid145@dsuniversity.ac.in';
+$email_from = 'https://github.com/YUGESHKARAN/club';
 
 $email_subject = 'New Form Submision';
 
