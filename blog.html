@@ -66,12 +66,13 @@
 
                 <div class="comment-box">
                     <h3>Leave a comment</h3>
-                    <form  class="comment-form">
-                        <input type="text" placeholder="Enter Name">
-                        <input type="email" placeholder="Enter Email">
-                        <textarea  rows="5" placeholder="Your comment"></textarea>
+                    <form  class="comment-form" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Name">
+                        <input type="email" name="Email" placeholder="Enter Email">
+                        <textarea  rows="5" name="Message" placeholder="Your comment"></textarea>
                         <button type="submit" class="hero-btn gold-btn">POST COMMENT</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
         
             </div>
@@ -162,6 +163,25 @@
 
 
 
-</script>    
+</script> 
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbysE9h_uxyIrFaG1DhIqViNw-SbZiByvaZratdLeB1S438WfkYH00c6WP4flWRsASNw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Comment sent successfully!!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>

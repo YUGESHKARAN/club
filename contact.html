@@ -72,13 +72,14 @@
             </div>
             <div class="contact-col">
 
-                <form action="form.php" method="post">
+                <form  name="submit-to-google-sheet" >
                     <input type="text" name="name" placeholder="Enter your name" required>
                     <input type="email" name="email" placeholder="Enter email address" required>
                     <input type="text" name="domain" placeholder="Enter your idea domain" required>
-                    <textarea rows="8" name="meaage" placeholder="Message" required></textarea>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
                     <button type="submit" class="hero-btn gold-btn">Send Message</button>
                 </form>
+                <span id="cmsg"></span>
             </div>
         </div>
 
@@ -135,6 +136,27 @@
 
 
 
-</script>    
+</script>
+
+<!---contact form script-->
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx_d3mB4K-gRavRXsRCMm2ym9WfmYVGX5-BRLBj83xW7rBJNr2jzXoOeS9ebp9gYom2/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const cmsg = document.getElementById("cmsg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            cmsg.innerHTML = "Message sent successfully!!"
+            setTimeout(function(){
+                cmsg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
