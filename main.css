@@ -686,7 +686,7 @@ nav .fa {
   margin: auto;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .title {
     margin-left: 30px;
   }
