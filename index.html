@@ -52,6 +52,28 @@
    </div>
 </div>
 
+<!-----animated number starts-->
+<div class="cont">
+    <div class="counter-container">
+     
+      <i class="fa fa-university  fa-3x" style="color: #fff;"></i>
+      <div class="counter" data-target="10" style="color:#BD9F67; font-weight: 800;"><h2>+</h2></div>
+      <span style="color: #fff; font-weight: 900;">Mentors</span>
+    </div>
+    <div class="counter-container">
+      <i class="fa fa-brain fa-3x" style="color: #fff;"></i>
+      <div class="counter" data-target="20" style="font-weight: 800;color:#BD9F67"></div>
+      <span style="color: #fff; font-weight: 900;">Startups</span>
+    </div>
+    <div class="counter-container">
+      <i class="fa fa-graduation-cap fa-3x" style="color: #fff;"></i>
+      <div class="counter" data-target="100" style="color: #BD9F67; font-weight: 800;"></div>
+      <span style="color: #fff; font-weight: 900;">Students</span>
+    </div>
+      
+  </div>
+<!-----animated number Ends-->
+
 
 
 
@@ -245,7 +267,26 @@
 
 
 
+<!------animated number script starts-->
 
+<script>
+    const counters = document.querySelectorAll(".counter");
+
+counters.forEach((counter) => {
+  counter.innerText = "0";
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText;
+    const increment = target / 200;
+    if (count < target) {
+      counter.innerText = `${Math.ceil(count + increment)}`;
+      setTimeout(updateCounter, 1);
+    } else counter.innerText = target+"+";
+  };
+  updateCounter();
+});
+  </script>
+<!------animated number script ends-->
 
 
 

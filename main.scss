@@ -815,3 +815,49 @@ nav .fa{
         font-size: 15px;
     }
 }
+
+
+//-----number animation strats-------- 
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+.cont{
+    margin-top: 50px;
+    display: flex;
+    
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7rgba(2, 5, 16, 0.7)7)),url(images/dsu\ acedemic\ logo.jpg);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //background: rgb(28, 28, 83);
+    
+}
+
+.counter-container {
+  display: flex;
+  flex-basis: 32%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+  
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .cont {
+    flex-direction: column;
+  }
+  
+}
+
+//-----animation ends-------
