@@ -826,10 +826,10 @@ nav .fa{
 }
 .cont{
     margin-top: 50px;
-    display: flex;
+    display:flex;
     
     
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7rgba(2, 5, 16, 0.7)7)),url(images/dsu\ acedemic\ logo.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/dsu\ acedemic\ logo.jpg);
     
     background-position: center;
     background-repeat: no-repeat;
@@ -854,7 +854,7 @@ nav .fa{
 }
 
 @media (max-width: 700px) {
-  .cont {
+  .cont{
     flex-direction: column;
   }
   
