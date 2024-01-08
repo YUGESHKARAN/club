@@ -36,8 +36,11 @@
       width:40%;
       height:10%;
       margin: 50px auto;
-      border-radius: 10px;
+    
+      
+      
     }
+    
     
   
   .carousel-item{
@@ -46,6 +49,9 @@
     background: #555;
     position: relative;
     color: #fff;
+   
+   
+    
   
    
   }
@@ -61,6 +67,9 @@
     height: 100%;
     background-size: cover;
     
+   
+    
+    
     
 
 
@@ -69,6 +78,7 @@
     .carousel-item{
         width: 100%;
         margin: 50px 0;
+        
     }
     .carousel.slide{
         width: 100%;
@@ -77,26 +87,32 @@
         border-radius: 10px;
       }
       .carousel-inner{
-        width: 100%;
+        width: 90%;
         height: 400px;
+        border-radius: 10px;
+        margin: auto;
+        
       }
-    }  
+       
+    } 
+     
 
         
     </style>
 </head>
-<body>
+<body style="background: #dad8d8;">
    
     <section class="sub-header">
         <nav>
-            <a href="index.html"><img src="images/E-cell-logo.png" class="logo"></a>
+            <a href="index.html"><img src="images/E-cell-logo.png" class="logo" style="border: 2px solid gold; border-radius: 50%;"></a>
             <div class="nav-links" id="navlinks">
                 <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="event.html">GALLERY</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="blg.html">BLOG</a></li>
+                    <li><a href="team.html">TEAM</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
@@ -115,7 +131,7 @@
         <P style="color: #212529; width: 80%; margin: auto; text-align: center; line-height: 30px; padding-top: 30px; font-size: 18px; ">Discover impactful moments from our E-CELL events,
              where aspiring entrepreneurs, industry experts, and innovators converge to inspire and gain knowledge.</P>
         
-        <div class="row">
+        <div class="row main">
             <div class="gallery">
                 <a href="images/E&P2.jpeg">
                   <img src="images/E&P2.jpeg" >
@@ -136,8 +152,8 @@
             </div>
             
             
-        </div> 
-        <div class="row">
+         
+        
             <div class="gallery">
                 <a href="images/gallery1.JPG">
                   <img src="images/gallery1.JPG" >
@@ -157,11 +173,10 @@
                   </a>
             </div>
             
-            
-        </div>   
+ 
 
 
-        <div class="row">
+        
             <div class="gallery">
                 <a href="images/gallery5.JPG">
                   <img src="images/gallery5.JPG" >
@@ -182,9 +197,9 @@
             </div>
             
             
-        </div>
+     
 
-        <div class="row">
+        
             <div class="gallery">
                 <a href="images/g10.JPG">
                   <img src="images/g10.JPG" >
@@ -210,19 +225,19 @@
 
 
 
-<div style="text-align: center;">
+<div style="text-align: center;  background: linear-gradient(120deg, rgb(3, 3, 86) 30%, gold 70%);  padding: 20px 0; margin-bottom: 20px; color: #fff !important;">
 <h1 style="text-align: center; color: #BD9F67; font-weight: 600; margin-top: 50px;">CELEBRATING SUCCESS</h1>
-<p>Encounter the former champions of the E-Cell DSU Innofest competition and draw inspiration from the entrepreneurial adventures that shaped their success.</p>
-</div>
+<p style="color: #fff; padding: 30px;">Encounter the former champions of the E-Cell DSU Innofest competition and draw inspiration from the entrepreneurial adventures that shaped their success.</p>
+
 <!-----------Card slider bootstrap starts---------->
 
 
-    <div id="demo" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 40px;">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 40px; " >
 
       
       
         <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="border-radius: 10px; " >
           <div class="carousel-item active" data-bs-interval="3000">
             <img src="images/cel1.jpeg" alt="Chicago" class="d-block w-100">
 
@@ -246,6 +261,7 @@
         </button>
       </div>
 
+    </div>
 
 
     <!-----------Card slider bootstrap ends---------->
@@ -254,65 +270,68 @@
 
 
 
-    <!------ Facilities ----->
-   <section class="facilities">
-    <h1>Our Facilities</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, veniam.</p>
+    
 
-    <div class="row">
-
-        <div class="facilities-col">
-            <img src="images/library.png">
-            <h3>World Class Workspace</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Asperiores esse vel numquam 
-            </p>
-        </div>
-
-        <div class="facilities-col">
-            <img src="images/basketball.png">
-            <h3>Providing Mentor Support</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Asperiores esse vel numquam 
-            </p>
-        </div>
-
-        <div class="facilities-col">
-            <img src="images/cafeteria.png">
-            <h3>Providing Fund Schemes</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Asperiores esse vel numquam 
-            </p>
-        </div>
-
+<!------Footer starts-->
+<footer>
+  <div class="footer-content" style="background: black;">
+    <div class="div1">
+      <h4 class="abh4">ABOUT US</h4>
+      <p style="text-align: left; padding-top: 20px; padding-bottom: 20px;" >
+          Encourage inventive minds to turn their startup ideas into tangible products and successfully launch them in the market.
+      </p>
+      <h6>FALLOW US ON</h6>
+      <div class="media">
+          
+              <div class="icon">
+                  <a href="https://www.linkedin.com/in/entrepreneurship-and-pre-incubation-cell-92387b289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+          
+                  <a href="https://x.com/EcellDSU?t=1tXe-zYzVkVxfuq6m9onmg&s=08"><i class="fa-brands fa-twitter"></i></a>
+          
+                  <a href="https://youtube.com/@ECellDSU?si=gqVxOyPkpqux6OGigttttt"><i class="fa-brands fa-youtube"></i></a>
+          
+                  <a href="https://www.threads.net/@ecelldsu"><i class="fa-brands fa-threads"></i></a>
+          
+                  <a href="https://www.facebook.com/ecelldsu?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+          
+                  <a href="https://instagram.com/ecelldsu?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-instagram"></i></a>
+               </div>
+          
+      </div>
     </div>
-</section>
 
-  
+    <div class="div1">
+      <h4>CONTACT US</h4>
+      <i class="fa fa-phone" style="font-size: small;"><span style="font-weight: 600;"> +91 9159771566</span></i>
+      <br>
+      <i class="fa fa-envelope" style="font-size: small; "><span style="font-weight: 600;">ecelldsu@dsuniversity.ac.in</span></i>
+      <br>
+      <i class="fa fa-home" style="font-size: small;"><span style="font-weight: 600;">Trichy,Tamil Nadu, India</span></i>
 
-   <section class="footer">
-     <h4>Our Events</h4>
-     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Dolore autem vitae non sint rerum quibusdam iusto earum modi. <br> Ab, nesciunt?
-         Temporibus maiores enim fugit in.
-    </p>
-    <div class="icon">
-        <div class="icon">
-            <a href="https://www.linkedin.com/in/entrepreneurship-and-pre-incubation-cell-92387b289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-            "><i class="fa-brands fa-linkedin"></i></a>
-    
-            <a href="https://x.com/EcellDSU?t=1tXe-zYzVkVxfuq6m9onmg&s=08"><i class="fa-brands fa-twitter"></i></a>
-    
-            <a href="https://youtube.com/@ECellDSU?si=gqVxOyPkpqux6OGigttttt"><i class="fa-brands fa-youtube"></i></a>
-    
-            <a href="https://www.threads.net/@ecelldsu"><i class="fa-brands fa-threads"></i></a>
-    
-            <a href="https://www.facebook.com/ecelldsu?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
-    
-            <a href="https://instagram.com/ecelldsu?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-instagram"></i></a>
-         </div>
+   </div>
+
+    <div class="div1">
+      <h4>USEFUL LINKS</h4>
+      <p><a href="index.html">HOME</a></p>
+      <p><a href="about.html">ABOUT</a></p>
+      <p><a href="event.html">GALLERY</a></p>
+      <p><a href="blg.html">BLOG</a></p>
+      <p><a href="team.html">TEAM</a></p>
+      <p><a href="contact.html">CONTACT</a></p>
     </div>
-   </section>
+    <div class="div1">
+      <h4>OUR INITIATIVES</h4>
+      <p>New Volume </p>
+      <p>Hire for Expert</p>
+      <p>FAQ</p>
+      <p>Chat With</p>
+    </div>
+  </div>
+  <hr style="margin: 0; margin-top: 3px;">
+  <p style="text-align: center; font-size: 13px !important; margin: 0; "> &copy;2024 Copyright: E-Cell<span> DSU</span></p>
+</footer>  
+<!------Footer ends-->
+
  
 
 
