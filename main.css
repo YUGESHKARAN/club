@@ -953,10 +953,11 @@ hr {
     font-size: 10px;
   }
 }
-/*@media(max-width: 800px){
-    .sub-header{
-
-       background: url(images/800.jpg);
-    }
-
-}*//*# sourceMappingURL=main.css.map */
+@media (max-width: 500px) {
+  .sub-header {
+    background: url(images/400_2.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}/*# sourceMappingURL=main.css.map */

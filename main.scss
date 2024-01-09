@@ -1110,10 +1110,14 @@ hr{
 }
 //-------blg content Ends-------------
 
-/*@media(max-width: 800px){
+@media(max-width: 500px){
     .sub-header{
 
-       background: url(images/800.jpg);
+       background: url(images/400_2.jpg);
+       background-position: top;
+       background-repeat: no-repeat;
+       background-size: cover;
+       
     }
    
-}*/
+}
