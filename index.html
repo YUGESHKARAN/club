@@ -119,6 +119,46 @@
 
 
 
+    <!------Comming Soon section starts -->
+
+    <div class="soon-container">
+       
+      <div class="s-ctn">
+          <div class="soon-content">
+              <h1  id="div1"> COMMING SOON....</h1>
+              <p>Step into the coding arena at <b style="color: red;"> Hack-O-Verse'24!</b> Conquer real 
+                  challenges, flaunt your skills, and be part of this thrilling event. Seize the coding glory!</p>
+          </div>
+
+          <div class="main1">        
+              <div class="launch-time">
+                  <div>
+                      <p  id="days">00</p>
+                      <span id="div3">DAYS</span>
+                  </div>
+      
+                  <div>
+                      <p id="hours">00</p>
+                      <span id="div4">HOURS</span>
+                  </div>
+      
+                  <div>
+                      <p id="minutes">00</p>
+                      <span id="div5">MINUTES</span>
+                  </div>
+                  <div>
+                      <p id="seconds">00</p>
+                      <span id="div6">SECONDS</span>
+                  </div>
+              </div>
+          </div>
+          <div class="butn" ><a href="images/eventposter.jpeg"><input  id="div2" type="button" value="Tap to View"></a></div>
+      </div>
+  </div>
+    <!------Comming Soon section ends-->
+
+
+
     <!-----Campus------>
 
    <!--- Call to Action -->
@@ -243,6 +283,133 @@ counters.forEach((counter) => {
 
 
 
-</script>    
+</script>  
+
+
+
+
+<!---comming soon starts-->
+
+<script>
+  var countD = new Date("Jan 29, 2024 00:00:00").getTime();
+        var x = setInterval(function(){
+            var now = new Date().getTime();
+            var distance = countD - now;
+
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+
+
+         document.getElementById("days").innerHTML = days;
+         document.getElementById("hours").innerHTML = hours;
+         document.getElementById("minutes").innerHTML = minutes;
+         document.getElementById("seconds").innerHTML = seconds;
+
+        },1000);
+</script>
+
+<script>
+
+var i = 0;
+        var j = 0; 
+
+        function divchange(){
+            var div = document.getElementById("div1");
+            
+            var texb = ['white', 'yellow', 'red'];
+            
+            div.style.color=texb[j];
+          
+            j=(j+1)%texb.length;
+
+        }
+        setInterval(divchange,1300);
+
+
+
+
+        var l = 0; 
+
+        function divcha(){
+            var div2 = document.getElementById("div2");
+           
+            var texb1 = ['white', 'yellow', 'red'];
+            
+            div2.style.color=texb1[l];
+    
+            l=(l+1)%texb1.length;
+
+        }
+        setInterval(divcha,1300);
+
+
+
+        var k = 0; 
+
+    function divch(){
+        var div3 = document.getElementById("div3");
+       
+        var texb2 = ['white', 'yellow', 'red'];
+        
+        div3.style.color=texb2[k];
+
+        k=(k+1)%texb2.length;
+
+    }
+    setInterval(divch,1300);
+
+
+    var l1 = 0; 
+
+    function divc(){
+        var div4 = document.getElementById("div4");
+       
+        var texb3 = ['white', 'yellow', 'red'];
+        
+        div4.style.color=texb3[l1];
+
+        l1=(l1+1)%texb3.length;
+
+    }
+    setInterval(divc,1300);
+
+
+    var l12 = 0; 
+
+function div(){
+    var div5 = document.getElementById("div5");
+   
+    var texb4 = ['white', 'yellow', 'red'];
+    
+    div5.style.color=texb4[l12];
+
+    l12=(l12+1)%texb4.length;
+
+}
+setInterval(div,1300);
+
+var l13 = 0; 
+
+function dik(){
+    var div6 = document.getElementById("div6");
+   
+    var texb5 = ['white', 'yellow', 'red'];
+    
+    div6.style.color=texb5[l13];
+
+    l13=(l13+1)%texb5.length;
+
+}
+setInterval(dik,1300);
+
+
+</script>
+
+<!---comming soon ends-->
 </body>
 </html>
