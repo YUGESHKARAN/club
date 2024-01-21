@@ -11,7 +11,7 @@
    
     <section class="header">
         <nav style="background: gold; max-height: 15vh;">
-            <a href="index.html"><img src="images/E-cell-logo.png" class="logo"></a>
+            <a href="index.html"><img src="images/dsu_logo.png" class="logo"></a>
             <div class="nav-links" id="navlinks">
                 <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul >
@@ -22,11 +22,26 @@
                     <li><a href="team.html" style="color: black; font-weight: 550;">TEAM</a></li>
                     <li><a href="contact.html" style="color: black; font-weight: 550;">CONTACT</a></li>
                 </ul>
+                
             </div>
             <i class="fa fa-bars" onclick="showmenu()" ></i>
         </nav>
+       <div class="container">
+        <div class="group">
+            <div class="text">
+                <marquee behavior="" direction="left"><span style="color: red; font-weight: 600;padding-right: 10px;" id="divn">Attention!! </span> Important Information will be displayed here [Website under Construction].</marquee>
+             
+            </div>
+        </div>
+    </div>
          
+   
+
+
+
+
         <div class="text-box">
+            <a href="about.html"><img src="images/E-cell-logo.png" class="e-cell-logo"></a>
             <h1><span >Entrepreneurship & Pre-Incubation Cell</span><br> Dhanalakshmi Srinivasan University</h1>
             <div class="inp-cnt">
                 <ul>
@@ -117,7 +132,7 @@
         </div>    
     </section>
 
-
+ 
 
     <!------Comming Soon section starts -->
 
@@ -406,6 +421,21 @@ function dik(){
 
 }
 setInterval(dik,1300);
+
+
+var n = 0; 
+
+function divnew(){
+    var divn = document.getElementById("divn");
+   
+    var texbn = ['red','green'];
+    
+    divn.style.color=texbn[n];
+
+    n=(n+1)%texbn.length;
+
+}
+setInterval(divnew,100);
 
 
 </script>
