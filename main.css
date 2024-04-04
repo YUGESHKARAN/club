@@ -195,6 +195,9 @@ nav .fa {
     border: none !important;
     border-radius: 0 !important;
   }
+  .nav-links ul li::after {
+    display: none;
+  }
   .e-cell-logo {
     width: 70px;
   }
