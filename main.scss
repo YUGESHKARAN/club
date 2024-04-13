@@ -200,7 +200,7 @@ nav .nav-links{
 
 .hero-btn:hover{
     background: gold;
-    color: rgb(8, 27, 155);
+    color: rgb(8, 27, 155) !important;
 }
 
 nav .fa{
@@ -1075,8 +1075,11 @@ hr{
     background: rgb(1, 4, 47);
     height: 500px;
     overflow:hidden;
+    transition: 1.5s;
 }
-
+.blog-section .section-content .cards .card:hover{
+    scale: (1.05);
+}
 .blog-section .section-content .cards .card img{
     width: 100%;
     height: 200px;
