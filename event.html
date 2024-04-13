@@ -93,8 +93,37 @@
         margin: auto;
         
       }
+      .carousel-item {
+        height: 65%;
+      
+      }
        
     } 
+    @media(max-width: 300px){
+      .carousel {
+        height: 50%;
+        
+      
+      }
+      .carousel-item{
+        background-color: transparent;
+      }
+      .carousel-item img {
+        max-height: 65%;
+        background-size: contain;
+       
+      
+      }
+      .carousel-control-prev-icon,.carousel-control-next-icon{
+        display: none;
+      }
+      .row{
+        margin-right: 30px;
+      }
+      div.gallery {
+        height: 95%;
+      }
+    }
      
 
         
