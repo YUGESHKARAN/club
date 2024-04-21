@@ -87,7 +87,7 @@ nav .nav-links {
 
 .nav-links ul li::after {
   content: "";
-  width: 0;
+  width: 0%;
   height: 2px;
   background: #f44336;
   display: block;
@@ -195,9 +195,6 @@ nav .fa {
     border: none !important;
     border-radius: 0 !important;
   }
-  .nav-links ul li::after {
-    display: none;
-  }
   .e-cell-logo {
     width: 70px;
   }
@@ -213,6 +210,9 @@ nav .fa {
   }
   .nav-links ul li {
     display: block;
+  }
+  .nav-links ul li::after {
+    display: none;
   }
   .nav-links ul :hover {
     background: var(--blue);
