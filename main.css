@@ -348,7 +348,7 @@ nav .fa {
     font-size: 25px;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 500px) {
   .row {
     grid-template-columns: 1;
     position: relative;
