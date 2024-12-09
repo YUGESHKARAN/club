@@ -60,10 +60,14 @@ nav{
     width: 100px;
     position: relative;
     margin-left: -30px;
-  
-   
-   
-   
+}
+
+.university{
+    font-size: 19px;
+    font-weight: 700;
+    margin-left: 20px;
+    // width: 40%;
+    // text-wrap: wrap;
 }
 
 //Logo On text starts here
@@ -208,6 +212,73 @@ nav .fa{
    
 }
 
+@media (max-width:800px) {
+    .university{
+        font-size: 12px;
+        // text-wrap: wrap;
+        // width: 40%;
+        margin-left: 10px;
+    }
+    
+}
+@media (max-width:950px) {
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul li::after{
+        display: none;
+    }
+    .nav-links ul  :hover{
+        
+        background: var(--blue);
+        a{
+        color:var(--white)
+        }
+    }
+    .nav-links{
+        position: fixed;
+        background: #fff;
+        height: 100vh;
+        width:200px;
+        top:0;
+        right:-250px;
+        z-index: 2;
+        transition: 1s;
+        text-align: center;
+    }
+    .nav-links ul li{
+        text-align: center;
+        color:#000;
+       font-weight: 550;
+       transition: 0.5s;
+       margin-bottom: 30px;
+        a{
+        color: rgb(3, 3, 86);
+        }
+    }
+    
+     nav .fa{
+        display: block;
+        color: #fff;
+        margin:20px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    nav .fa.fa-times{
+        display: block;
+        color: #000;
+        margin:20px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+       padding: 30px;
+    }
+    .text marquee{
+        font-size: 10px;
+    }
+    
+}
 @media(max-width: 700px){
 
     .logo{
@@ -215,11 +286,9 @@ nav .fa{
         padding-left: 20px;
         border:none !important;
         border-radius: 0 !important;
-      
-       
-        
-       
     }
+
+   
    
     .e-cell-logo{
 
@@ -239,47 +308,7 @@ nav .fa{
         }
 
     }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links ul li::after{
-        display: none;
-    }
-    .nav-links ul  :hover{
-        
-        background: var(--blue);
-        a{
-        color:var(--white)
-        }
-    }
-    .nav-links{
-        position: fixed;
-        background: gold;
-        height: 100vh;
-        width:150px;
-        top:0;
-        right:-200px;
-        text-align: center;
-        z-index: 2;
-        transition: 1s;
-    }
-    .nav-links ul li{
-        text-align: left;
-        a{
-        color: rgb(3, 3, 86);
-        }
-    }
-    
-     nav .fa{
-        display: block;
-        color: var(--white);
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-links ul{
-       padding: 30px;
-    }
+   
 }
 //--------   Events  ---------
 
@@ -305,7 +334,6 @@ nav .fa{
 }
 
 .row{
-
     display: grid;
     grid-template-columns: repeat(4,4fr);
     grid-gap: 50px;
@@ -355,19 +383,25 @@ nav .fa{
 
     .row{
         
-       grid-template-columns: (2,2fr);
+       grid-template-columns: (2,2fr) !important;
        position: relative;
        left: 0;
        right: 0;
       
        
     }
+    .course{
+        width: 100%;
+        h1{
+            font-size: 25px;
+        }
+    }
 }
 @media(max-width: 370px){
 
     .row{
         
-       grid-template-columns: (2,2fr);
+       grid-template-columns: 1;
        position: relative;
        left: 0;
        right: 0;
@@ -394,6 +428,11 @@ nav .fa{
         transition: 0.2s;
         border: 2px solid #BD9F67;
         border-radius: 4px;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
         
         
     }
@@ -545,6 +584,7 @@ nav .fa{
 .about-col.one{
 
     flex-basis: 52%;
+    
    // padding: 30px 2px;
 }
 .about-col.two{
@@ -676,6 +716,15 @@ nav .fa{
         
         padding-top: 30px;
     }
+    .about-col.one{
+        h1{
+            font-size: 25px;
+        
+    }
+    p{
+        text-align: center;
+    }
+}
 }
 
 //-----contact us page-----
@@ -868,16 +917,24 @@ nav .fa{
     .title {
         margin-left: auto;
        // margin:0 auto 0;
+
     }
     .profile-box {
         flex-basis: 100%;
     }
     .title h2{
         padding-top: 30px;
-        font-size: 30px;
+        font-size: 25px;
+    }
+    .title.blog h2{
+    font-size: 25px;
+    }
+    .title.blog p{
+        font-size: 14px;
+        width: 100%;
     }
     .title p{
-        font-size: 15px;
+        font-size: 12px;
     }
     .contact-col div span h5{
         font-size: 13px;
@@ -1164,22 +1221,26 @@ hr{
 
 @media screen and (max-width: 550px){
 
+    
     .blog-section .section-content .title h2{
-        font-size: 28px;
+        font-size: 25px;
+        width: 100%;
     }
     .blog-section .section-content .title p{
-        font-size: 12px;
+        font-size: 14px;
+        text-wrap: wrap;
+        width: 100%;
     }
 }
 
 
 @media screen and (max-width: 340px){
-
+ 
     .blog-section .section-content .title h2{
-        font-size: 23px;
+        font-size: 25px;
     }
     .blog-section .section-content .title p{
-        font-size: 10px;
+        font-size: 14px;
     }
 }
 //-------blg content Ends-------------

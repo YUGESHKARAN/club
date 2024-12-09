@@ -21,7 +21,10 @@
    
     <section class="header">
         <nav style="background: gold; max-height: 15vh;">
+            <div style="display: flex; align-items: center; gap:5px;">
             <a href="index.html"><img src="images/dsu_logo.png" class="logo"></a>
+            <p class="university" class="text-wrap:wrap">Dhanalakshmi Srinivasan <br> University</p>
+        </div>
             <div class="nav-links" id="navlinks">
                 <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul >
@@ -34,12 +37,12 @@
                 </ul>
                 
             </div>
-            <i class="fa fa-bars" onclick="showmenu()" ></i>
+            <i class="fa fa-bars" class="close" onclick="showmenu()" ></i>
         </nav>
        <div class="container-top">
         <div class="group">
             <div class="text">
-                <marquee behavior="" direction="left"><span style="color: red; font-weight: 600; padding-right: 10px;" id="divn">Attention!! </span> Important Information will be displayed here [Website under Construction].</marquee>
+                <marquee behavior="" direction="left"><span style="color: red; font-weight: 600; padding-right: 10px;" id="divn">Attention!! </span> Welcome to Entrepreneurship and Pre-Incubation Cell, DSU.</marquee>
              
             </div>
         </div>
@@ -307,7 +310,7 @@ counters.forEach((counter) => {
     }
 
     function hidemenu(){
-        navlinks.style.right="-200px";
+        navlinks.style.right="-250px";
     }
 
 

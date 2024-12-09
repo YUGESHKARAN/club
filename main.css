@@ -61,6 +61,12 @@ nav {
   margin-left: -30px;
 }
 
+.university {
+  font-size: 19px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
 .e-cell-logo {
   width: 100px;
   border: 2px solid gold;
@@ -188,6 +194,67 @@ nav .fa {
   display: none;
 }
 
+@media (max-width: 800px) {
+  .university {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 950px) {
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links ul li::after {
+    display: none;
+  }
+  .nav-links ul :hover {
+    background: var(--blue);
+  }
+  .nav-links ul :hover a {
+    color: var(--white);
+  }
+  .nav-links {
+    position: fixed;
+    background: #fff;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -250px;
+    z-index: 2;
+    transition: 1s;
+    text-align: center;
+  }
+  .nav-links ul li {
+    text-align: center;
+    color: #000;
+    font-weight: 550;
+    transition: 0.5s;
+    margin-bottom: 30px;
+  }
+  .nav-links ul li a {
+    color: rgb(3, 3, 86);
+  }
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 20px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  nav .fa.fa-times {
+    display: block;
+    color: #000;
+    margin: 20px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+  .text marquee {
+    font-size: 10px;
+  }
+}
 @media (max-width: 700px) {
   .logo {
     width: 70px;
@@ -207,45 +274,6 @@ nav .fa {
   }
   .text-box h1 span {
     font-size: 20px;
-  }
-  .nav-links ul li {
-    display: block;
-  }
-  .nav-links ul li::after {
-    display: none;
-  }
-  .nav-links ul :hover {
-    background: var(--blue);
-  }
-  .nav-links ul :hover a {
-    color: var(--white);
-  }
-  .nav-links {
-    position: fixed;
-    background: gold;
-    height: 100vh;
-    width: 150px;
-    top: 0;
-    right: -200px;
-    text-align: center;
-    z-index: 2;
-    transition: 1s;
-  }
-  .nav-links ul li {
-    text-align: left;
-  }
-  .nav-links ul li a {
-    color: rgb(3, 3, 86);
-  }
-  nav .fa {
-    display: block;
-    color: var(--white);
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  .nav-links ul {
-    padding: 30px;
   }
 }
 .course {
@@ -308,15 +336,21 @@ nav .fa {
 
 @media (max-width: 700px) {
   .row {
-    grid-template-columns: 2, 2fr;
+    grid-template-columns: 2, 2fr !important;
     position: relative;
     left: 0;
     right: 0;
   }
+  .course {
+    width: 100%;
+  }
+  .course h1 {
+    font-size: 25px;
+  }
 }
 @media (max-width: 370px) {
   .row {
-    grid-template-columns: 2, 2fr;
+    grid-template-columns: 1;
     position: relative;
     left: 0;
     right: 0;
@@ -336,6 +370,12 @@ nav .fa {
     transition: 0.2s;
     border: 2px solid #BD9F67;
     border-radius: 4px;
+  }
+  div.gallery img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 }
 .campus {
@@ -572,6 +612,12 @@ nav .fa {
   .about-col.two {
     padding-top: 30px;
   }
+  .about-col.one h1 {
+    font-size: 25px;
+  }
+  .about-col.one p {
+    text-align: center;
+  }
 }
 .location {
   width: 80%;
@@ -754,10 +800,17 @@ nav .fa {
   }
   .title h2 {
     padding-top: 30px;
-    font-size: 30px;
+    font-size: 25px;
+  }
+  .title.blog h2 {
+    font-size: 25px;
+  }
+  .title.blog p {
+    font-size: 14px;
+    width: 100%;
   }
   .title p {
-    font-size: 15px;
+    font-size: 12px;
   }
   .contact-col div span h5 {
     font-size: 13px;
@@ -999,18 +1052,21 @@ hr {
 }
 @media screen and (max-width: 550px) {
   .blog-section .section-content .title h2 {
-    font-size: 28px;
+    font-size: 25px;
+    width: 100%;
   }
   .blog-section .section-content .title p {
-    font-size: 12px;
+    font-size: 14px;
+    text-wrap: wrap;
+    width: 100%;
   }
 }
 @media screen and (max-width: 340px) {
   .blog-section .section-content .title h2 {
-    font-size: 23px;
+    font-size: 25px;
   }
   .blog-section .section-content .title p {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 @media (max-width: 500px) {
