@@ -401,11 +401,14 @@ nav .fa{
 
     .row{
         
-       grid-template-columns: 1;
-       position: relative;
+       grid-template-columns: 1fr;
+    //    position: relative;
        left: 0;
        right: 0;
-       margin: auto;
+
+       .gallery{
+        margin: auto;
+       }
       
        
     }

@@ -350,10 +350,11 @@ nav .fa {
 }
 @media (max-width: 500px) {
   .row {
-    grid-template-columns: 1;
-    position: relative;
+    grid-template-columns: 1fr;
     left: 0;
     right: 0;
+  }
+  .row .gallery {
     margin: auto;
   }
 }
