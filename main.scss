@@ -3,8 +3,8 @@
 
 :root{
 
-    --white:#fff;
-    --blue:rgb(3, 3, 86);
+    --white:#eaeaea;
+    --blue:rgb(201, 201, 201);
       
 }
 
@@ -13,20 +13,23 @@
     color:var(--blue);
 }
 body{
-    background: #dad8d8;
+    background: #000000;
    
 }
+.text
 html::-webkit-scrollbar{
-    width:.5rem;
+    width:10px;
 }
 
 
 html::-webkit-scrollbar-track{
-    background:gold;
+    background:rgb(4, 4, 4);
 }
 
 html::-webkit-scrollbar-thumb{
     background:var(--blue);
+    width: 10px;
+    border-radius: 10px;
     
 }
 
@@ -41,10 +44,11 @@ html::-webkit-scrollbar-thumb{
 .header{
     min-height: 100vh;
     width:100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/dsu\ acedemic\ logo.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)),url(images/dsu\ acedemic\ logo.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
+    
     
 }
 
@@ -68,6 +72,7 @@ nav{
     margin-left: 20px;
     // width: 40%;
     // text-wrap: wrap;
+    color: white;
 }
 
 //Logo On text starts here
@@ -82,6 +87,7 @@ nav .nav-links{
 
     flex: 1;
     text-align: right;
+
 }
 .nav-links ul li{
 
@@ -106,7 +112,7 @@ nav .nav-links{
     background: #f44336;
     display: block;
     margin: auto;
-    transition: 0.5s;
+    transition: 1s;
 }
 .nav-links ul li:hover::after{
 
@@ -353,10 +359,13 @@ nav .fa{
     color:black;
     border-radius: 8px;
     margin-bottom: 5%;
-    border: 2px solid black;
+    border: 0.5px solid black;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
+    
+
+    box-shadow: 10px -8px 0px #e5ad45;
     
     
     h3{
@@ -368,14 +377,15 @@ nav .fa{
 }
 
 .course-col:hover{
-    color: #fff;
-    background: rgb(18, 17, 17);
+    color: #010101;
+    background: rgb(255, 255, 255);
+    
 
     //box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
-    box-shadow: 0 0 20px 0px #e5ad45;
+    box-shadow: 0 0 10px 0px #e5ad45;
     border: 2.5px solid #BD9F67;
     p{
-        color: #fff;
+        color: #000000;
     }
 
 }

@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Blinker:wght@600;700&family=Dosis:wght@500&family=Libre+Baskerville:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,600&family=PT+Sans+Narrow:wght@700&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Whisper&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 :root {
-  --white:#fff;
-  --blue:rgb(3, 3, 86);
+  --white:#eaeaea;
+  --blue:rgb(201, 201, 201);
 }
 
 *::-moz-selection {
@@ -17,19 +17,21 @@
 }
 
 body {
-  background: #dad8d8;
+  background: #000000;
 }
 
-html::-webkit-scrollbar {
-  width: 0.5rem;
+.text html::-webkit-scrollbar {
+  width: 10px;
 }
 
 html::-webkit-scrollbar-track {
-  background: gold;
+  background: rgb(4, 4, 4);
 }
 
 html::-webkit-scrollbar-thumb {
   background: var(--blue);
+  width: 10px;
+  border-radius: 10px;
 }
 
 * {
@@ -42,7 +44,7 @@ html::-webkit-scrollbar-thumb {
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/dsu\ acedemic\ logo.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(4, 9, 30, 0.7)), url(images/dsu\ acedemic\ logo.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -65,6 +67,7 @@ nav {
   font-size: 19px;
   font-weight: 700;
   margin-left: 20px;
+  color: white;
 }
 
 .e-cell-logo {
@@ -98,7 +101,7 @@ nav .nav-links {
   background: #f44336;
   display: block;
   margin: auto;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .nav-links ul li:hover::after {
@@ -313,10 +316,11 @@ nav .fa {
   color: black;
   border-radius: 8px;
   margin-bottom: 5%;
-  border: 2px solid black;
+  border: 0.5px solid black;
   padding: 20px 12px;
   box-sizing: border-box;
   transition: 0.5s;
+  box-shadow: 10px -8px 0px #e5ad45;
 }
 .course-col h3 {
   text-align: center;
@@ -325,13 +329,13 @@ nav .fa {
 }
 
 .course-col:hover {
-  color: #fff;
-  background: rgb(18, 17, 17);
-  box-shadow: 0 0 20px 0px #e5ad45;
+  color: #010101;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 10px 0px #e5ad45;
   border: 2.5px solid #BD9F67;
 }
 .course-col:hover p {
-  color: #fff;
+  color: #000000;
 }
 
 @media (max-width: 700px) {
