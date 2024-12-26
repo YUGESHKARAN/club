@@ -6,6 +6,8 @@
     <title>E-Cell DSU</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- o=aos package implementation -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <style>
     .nav-links ul li a{
@@ -20,10 +22,11 @@
 <body>
    
     <section class="header">
-        <nav style="background: rgb(0, 0, 0); max-height: 15vh;">
+        <nav style="background: rgba(0, 0, 0, 0.968); max-height: 15vh;">
             <div style="display: flex; align-items: center; gap:5px;">
             <a href="index.html"><img src="images/dsu_logo.png" class="logo"></a>
-            <p class="university" class="text-wrap:wrap">DHANALAKSHMI SRINIVASAN  <br> UNIVERSITY</p>
+
+            <!-- <p class="university" class="text-wrap:wrap">DHANALAKSHMI SRINIVASAN   UNIVERSITY</p> -->
         </div>
             <div class="nav-links" id="navlinks">
                 <i class="fa fa-times" onclick="hidemenu()"></i>
@@ -40,12 +43,12 @@
             <i class="fa fa-bars" class="close" onclick="showmenu()" ></i>
         </nav>
        <div class="container-top">
-        <div class="group">
+        <!-- <div class="group">
             <div class="text">
-                <marquee behavior="" direction="left"><span style="color: red; font-weight: 600; padding-right: 10px;" id="divn">Attention!! </span> Welcome to Entrepreneurship and Pre-Incubation Cell, DSU.</marquee>
+                <marquee behavior="" direction="left"><span style="color: red; font-weight: 600; padding-right: 10px;" id="divn">Attention !! </span> Welcome to Entrepreneurship and Pre-Incubation Cell, DSU.</marquee>
              
             </div>
-        </div>
+        </div> -->
     </div>
          
    
@@ -54,8 +57,10 @@
 
 
         <div class="text-box">
-            <a href="about.html"><img src="images/E-cell-logo.png" class="e-cell-logo"></a>
-            <h1><span >Entrepreneurship & Pre-Incubation Cell</span><br> Dhanalakshmi Srinivasan University</h1>
+            <a href="about.html"><img  src="images/E-cell-logo.png" class="e-cell-logo"></a>
+            <h1 ><span class="gradient-text" >Entrepreneurship & Pre-Incubation Cell</span></h1>
+            <br> 
+            <h1 class="gradient-text" style="font-family: sans-serif;">Dhanalakshmi Srinivasan University</h1>
             <div class="inp-cnt">
                 <ul>
                     <li>IDEATE</li>
@@ -69,6 +74,9 @@
 
 
     </section>
+   
+    <br>
+    <hr>
 
    
 <div class="ecell-draft" style="padding-top: 40px;">
@@ -87,28 +95,33 @@
 </div>
 
 <!-----animated number starts-->
-<div class="cont">
-    <div class="counter-container">
+
+<div  class="cont">
+    <div data-aos="fade-right" class="counter-container">
      
       <i class="fa fa-university  fa-3x" style="color: #BD9F67;"></i>
       <div class="counter" data-target="100" style="color:#fff; font-weight: 800; "><h2></h2></div>
-      <span style="color: yellow; font-weight: 900; font-size: 20px;">Mentors</span>
+      <span style="color: rgb(255, 255, 255); font-weight: 900; font-size: 20px;">Mentors</span>
     </div>
-    <div class="counter-container">
+    <div data-aos="fade-right" class="counter-container">
       <i class="fa fa-brain fa-3x" style="color: #BD9F67;"></i>
       <div class="counter" data-target="250" style="font-weight: 800;color:#fff; "></div>
-      <span style="color: yellow; font-weight: 900; font-size: 20px;">Startups</span>
+      <span style="color: rgb(255, 255, 255); font-weight: 900; font-size: 20px;">Startups</span>
     </div>
-    <div class="counter-container">
+    <div data-aos="fade-right" class="counter-container">
       <i class="fa fa-graduation-cap fa-3x" style="color: #BD9F67;"></i>
       <div class="counter" data-target="1000" style="color: #fff; font-weight: 800; "></div>
-      <span style="color: yellow; font-weight: 900; font-size: 20px;">Students</span>
+      <span style="color: rgb(255, 255, 255); font-weight: 900; font-size: 20px;">Students</span>
     </div>
       
   </div>
 <!-----animated number Ends-->
+<br>
+<br>
+<br>
 
 
+<hr style="height: 2px;">
 
 
 
@@ -117,20 +130,20 @@
     <!---Events-->
    
     <section class="course">
-        <h1 style="text-align: center; color: #ffffff;">Mission and Vision</h1>
-        <p style="color: white;">Let's Envision the Mission </p>
+        <U><h1 style="text-align: center; color: #000000;">Mission and Vision</h1></U>
+        <p style="color: rgb(17, 17, 17);">Let's Envision the Mission </p>
   
-        <div class="rows" style="text-align: left;">
-            <div class="course-col">
+        <div  class="rows" style="text-align: left;">
+            <div data-aos="fade-up" class="course-col">
                 <h3>Mission</h3>
                 <p>Equip our students and staffs
-                     with right skills and resources implementing
+                     with rigth skills and resources implementing
                       the concept of  "Entrepreneurship" in our 
                       university and producing potential "Entrepreneurs" to the world.
                 </p>
             </div>
 
-            <div class="course-col">
+            <div data-aos="fade-up" class="course-col">
                 <h3>Vision</h3>
                 <p>We promise a path of hope to all 
                     the minds who aspire to be an 
@@ -139,7 +152,7 @@
                 </p>
             </div>
 
-            <div class="course-col">
+            <div data-aos="fade-up" class="course-col">
                 <h3>Kick-Start</h3>
                 <p>Determine, Shape and Propel your
                    thoughts into ideas and let's 
@@ -148,21 +161,22 @@
             </div>
         </div>    
     </section>
-
+<br>
+<hr>
  
 
     <!------Comming Soon section starts -->
 
-    <div class="soon-container">
+    <div class="soon-container" data-aos="fade-up">
        
       <div class="s-ctn">
           <div class="soon-content">
-              <h1  id="div1"> COMMING SOON....</h1>
-              <p>Step into the coding arena at <b style="color: red;">NEW EVENT</b> Conquer real 
+              <h1 style="color: white;"> COMMING SOON....</h1>
+              <p>Step into the coding arena at <b class="gradient-text2">NEW EVENT</b> Conquer real 
                   challenges, flaunt your skills, and be part of this thrilling event. Seize the coding glory!</p>
           </div>
 
-          <div class="main1">        
+          <div  class="main1">        
               <div class="launch-time">
                   <div>
                       <p  id="days">00</p>
@@ -196,7 +210,7 @@
    <!--- Call to Action -->
    <section class="cta">
 
-       <h1 style="color: antiquewhite;">Enroll For Our Startup Programs And Schemes</h1>
+       <h1 style="color: rgb(255, 255, 255);">Enroll For Our Startup Programs And Schemes</h1>
        <a href="contact.html" class="hero-btn" style="color:antiquewhite ;">CONTACT US</a> 
    </section>
 
@@ -210,10 +224,12 @@
     <div class="footer-content">
       <div class="div1">
         <h4>ABOUT US</h4>
+        <hr>
         <p style="text-align: left; padding-top: 20px; padding-bottom: 20px;" >
             Encourage inventive minds to turn their startup ideas into tangible products and successfully launch them in the market.
         </p>
         <h6>FOLLOW US ON</h6>
+        <hr>
         <div class="media">
             
                 <div class="icon">
@@ -235,6 +251,7 @@
   
       <div class="div1">
          <h4>CONTACT US</h4>
+         <hr>
          <i class="fa fa-phone" style="font-size: small;"><span style="font-weight: 600;"> +91 9159771566</span></i>
          <br>
          <i class="fa fa-envelope" style="font-size: small; "><span style="font-weight: 600;">ecelldsu@dsuniversity.ac.in</span></i>
@@ -244,7 +261,8 @@
       </div>
   
       <div class="div1">
-        <h4>USEFUL LINKS</h4>
+        <h4 >USEFUL LINKS</h4>
+        <hr>
         <p ><a href="index.html">HOME</a></p>
         <p ><a href="about.html">ABOUT</a></p>
         <p ><a href="team.html">TEAM</a></p>
@@ -254,6 +272,7 @@
       </div>
       <div class="div1">
         <h4>OUR INITIATIVES</h4>
+        <hr>
         <p>New Volume </p>
         <p>Hire for Expert</p>
         <p>FAQ</p>
@@ -262,7 +281,7 @@
     </div>
 
     <hr>
-    <p style="text-align: center; font-size: 13px !important; "> &copy;2024 Copyright: E-Cell<span> DSU</span></p>
+    <p style="text-align: center;  font-size: 13px !important; "> &copy;2024 Copyright: E-Cell<span> DSU</span></p>
   </footer>  
 
 <!------Footer ends-->
@@ -354,14 +373,14 @@ var i = 0;
         function divchange(){
             var div = document.getElementById("div1");
             
-            var texb = ['white', 'yellow', 'red'];
+            var texb = ['white','gray'];
             
             div.style.color=texb[j];
           
             j=(j+1)%texb.length;
 
         }
-        setInterval(divchange,1300);
+        setInterval(divchange,500);
 
 
 
@@ -371,14 +390,14 @@ var i = 0;
         function divcha(){
             var div2 = document.getElementById("div2");
            
-            var texb1 = ['white', 'yellow', 'red'];
+            var texb1 = ['white','gray'];
             
             div2.style.color=texb1[l];
     
             l=(l+1)%texb1.length;
 
         }
-        setInterval(divcha,1300);
+        setInterval(divcha,500);
 
 
 
@@ -387,14 +406,14 @@ var i = 0;
     function divch(){
         var div3 = document.getElementById("div3");
        
-        var texb2 = ['white', 'yellow', 'red'];
+        var texb2 = ['white','gray'];
         
         div3.style.color=texb2[k];
 
         k=(k+1)%texb2.length;
 
     }
-    setInterval(divch,1300);
+    setInterval(divch,500);
 
 
     var l1 = 0; 
@@ -402,14 +421,14 @@ var i = 0;
     function divc(){
         var div4 = document.getElementById("div4");
        
-        var texb3 = ['white', 'yellow', 'red'];
+        var texb3 = ['white','gray'];
         
         div4.style.color=texb3[l1];
 
         l1=(l1+1)%texb3.length;
 
     }
-    setInterval(divc,1300);
+    setInterval(divc,500);
 
 
     var l12 = 0; 
@@ -417,28 +436,28 @@ var i = 0;
 function div(){
     var div5 = document.getElementById("div5");
    
-    var texb4 = ['white', 'yellow', 'red'];
+    var texb4 = ['white','gray',];
     
     div5.style.color=texb4[l12];
 
     l12=(l12+1)%texb4.length;
 
 }
-setInterval(div,1300);
+setInterval(div,500);
 
 var l13 = 0; 
 
 function dik(){
     var div6 = document.getElementById("div6");
    
-    var texb5 = ['white', 'yellow', 'red'];
+    var texb5 = ['white','gray'];
     
     div6.style.color=texb5[l13];
 
     l13=(l13+1)%texb5.length;
 
 }
-setInterval(dik,1300);
+setInterval(dik,500);
 
 
 var n = 0; 
@@ -446,7 +465,7 @@ var n = 0;
 function divnew(){
     var divn = document.getElementById("divn");
    
-    var texbn = ['red','blue'];
+    var texbn = ['black','gray'];
     
     divn.style.color=texbn[n];
 
@@ -459,5 +478,14 @@ setInterval(divnew,300);
 </script>
 
 <!---comming soon ends-->
+
+ <!-- AOS JS -->
+ <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+ <script>
+   AOS.init({
+     duration: 2000, // Animation duration in milliseconds
+          // Run the animation only once
+   });
+ </script>
 </body>
 </html>

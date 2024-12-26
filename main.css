@@ -17,7 +17,7 @@
 }
 
 body {
-  background: #000000;
+  background: #ffffff;
 }
 
 .text html::-webkit-scrollbar {
@@ -25,7 +25,7 @@ body {
 }
 
 html::-webkit-scrollbar-track {
-  background: rgb(4, 4, 4);
+  background: rgb(164, 2, 2);
 }
 
 html::-webkit-scrollbar-thumb {
@@ -44,23 +44,35 @@ html::-webkit-scrollbar-thumb {
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(4, 9, 30, 0.7)), url(images/dsu\ acedemic\ logo.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(images/ban1.jpeg);
   background-position: center;
   background-size: cover;
   position: relative;
+  animation: zoomIn 5s infinite;
+  background-repeat: no-repeat;
 }
 
+@keyframes zoomIn {
+  0% {
+    background-size: 2000%;
+  }
+  100% {
+    background-size: 180%; /* Adjust as needed for the zoom level */
+  }
+}
 nav {
   display: flex;
-  padding: 2% 6%;
+  padding: 0% 3%;
   justify-content: space-between;
   align-items: center;
+  background-color: #000;
 }
 
 .logo {
-  width: 100px;
+  width: 70px;
   position: relative;
   margin-left: -30px;
+  padding-top: 5px;
 }
 
 .university {
@@ -89,22 +101,34 @@ nav .nav-links {
 }
 
 .nav-links ul li a {
-  text-decoration: none;
-  color: var(--white);
-  font-size: 15px;
+  background-image: linear-gradient(to right, #8c8c8c, #b2b2b2 50%, #ffffff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
-.nav-links ul li::after {
+.nav-links ul li a:before {
   content: "";
-  width: 0%;
-  height: 2px;
-  background: #f44336;
+  background: #ffd75e;
   display: block;
-  margin: auto;
-  transition: 1s;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
 }
 
-.nav-links ul li:hover::after {
+.nav-links ul li a:hover {
+  background-position: 0;
+}
+
+.nav-links ul li a:hover::before {
   width: 100%;
 }
 
@@ -115,8 +139,6 @@ nav .nav-links {
   background: #e4e4e4;
   position: relative;
   overflow: hidden;
-  border-bottom: 2px solid #341f97;
-  border-top: 2px solid #341f97;
 }
 
 .group.text {
@@ -185,12 +207,12 @@ nav .nav-links {
   background: transparent;
   position: relative;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .hero-btn:hover {
-  background: gold;
-  color: rgb(8, 27, 155) !important;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255) !important;
 }
 
 nav .fa {
@@ -259,9 +281,12 @@ nav .fa {
   }
 }
 @media (max-width: 700px) {
+  * {
+    overflow-x: hidden !important;
+  }
   .logo {
     width: 70px;
-    padding-left: 20px;
+    padding-left: 40px;
     border: none !important;
     border-radius: 0 !important;
   }
@@ -319,8 +344,8 @@ nav .fa {
   border: 0.5px solid black;
   padding: 20px 12px;
   box-sizing: border-box;
-  transition: 0.5s;
-  box-shadow: 10px -8px 0px #e5ad45;
+  transition: 0.5s !important;
+  box-shadow: 10px -8px 0px #050505;
 }
 .course-col h3 {
   text-align: center;
@@ -331,14 +356,18 @@ nav .fa {
 .course-col:hover {
   color: #010101;
   background: rgb(255, 255, 255);
-  box-shadow: 0 0 10px 0px #e5ad45;
-  border: 2.5px solid #BD9F67;
+  box-shadow: 0 0 10px 0px #000000;
+  border: 2.5px solid #000000;
 }
 .course-col:hover p {
   color: #000000;
 }
 
 @media (max-width: 700px) {
+  .header {
+    animation: none;
+    min-height: 550px !important;
+  }
   .row {
     grid-template-columns: 2, 2fr !important;
     position: relative;
@@ -368,6 +397,8 @@ nav .fa {
   }
   .rows {
     flex-direction: column;
+    width: 90%;
+    margin: auto;
   }
   div.gallery {
     margin: 20px auto;
@@ -479,13 +510,12 @@ nav .fa {
 }
 
 .sub-header {
-  height: 50vh;
   width: 100%;
-  background-image: url(images/2ban.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   text-align: center;
   color: var(--white);
+  border-bottom: 1px solid black;
 }
 
 .sub-header h1 {
@@ -731,7 +761,7 @@ nav .fa {
 }
 
 .social-box {
-  background: #BD9F67;
+  background: #000000;
   margin: 60px auto 20px;
   text-align: center;
   border: 1px solid #fff;
@@ -757,8 +787,8 @@ nav .fa {
 }
 
 .profile-box:hover {
-  background: #BD9F67;
-  color: black;
+  background: #000000;
+  color: rgb(255, 255, 255);
 }
 
 .profile-box:hover h4 {
@@ -778,11 +808,11 @@ nav .fa {
 }
 
 .profile-box:hover .social-box .fa-brands {
-  color: #BD9F67;
+  color: #000000;
 }
 
 .profile-box:hover .social-box .fa {
-  color: #BD9F67;
+  color: #000000;
 }
 
 .profile-row {
@@ -833,7 +863,7 @@ nav .fa {
 .cont {
   margin-top: 50px;
   display: flex;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/dsu\ acedemic\ logo.jpg);
+  background-color: #000;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -861,14 +891,14 @@ nav .fa {
 footer {
   padding: 0;
   width: 100%;
-  background: #b59a68;
+  background: #fcfcfc;
   height: auto;
 }
 
 .footer-content {
   width: 100%;
   display: flex;
-  background: rgb(22, 22, 54);
+  background: rgb(2, 2, 2);
   color: #fff;
   justify-content: space-around;
   padding: auto;
@@ -880,11 +910,11 @@ footer {
 }
 
 .div1 h4 {
-  color: #BD9F67;
+  color: #ffffff;
 }
 
 .div1 h6 {
-  color: #BD9F67;
+  color: #ffffff;
 }
 
 .div1 p a {
@@ -894,7 +924,7 @@ footer {
 }
 
 .div1 p a:hover {
-  color: red;
+  color: rgb(0, 106, 255);
 }
 
 footer p {
@@ -977,7 +1007,7 @@ hr {
 .blog-section .section-content .cards .card {
   width: 100%;
   position: relative;
-  background: rgb(1, 4, 47);
+  background: rgb(3, 3, 3);
   height: 500px;
   overflow: hidden;
   transition: 1.5s;
@@ -998,7 +1028,7 @@ hr {
 
 .blog-section .section-content .cards .card .article h4 {
   font-size: 18px;
-  color: rgb(190, 190, 104);
+  color: rgb(255, 255, 255);
 }
 
 .blog-section .section-content .cards .card .article p {
@@ -1010,10 +1040,11 @@ hr {
 .blog-section .section-content .cards .card a {
   text-decoration: none;
   display: inline-block;
-  background-color: #359292;
+  background-color: #000000;
   padding: 8px 15px;
   margin-left: 20px;
-  color: yellow;
+  color: rgb(255, 255, 255);
+  border: 1px solid white;
   margin-bottom: 20px;
   border-radius: 4px;
   bottom: 7px;
@@ -1022,8 +1053,8 @@ hr {
 }
 
 .blog-section .section-content .cards .card a:hover {
-  background-color: #fff;
-  color: #359292;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .blog-section .section-content .cards .card .posted-date {
@@ -1032,7 +1063,7 @@ hr {
   top: 0;
   left: 0;
   display: inline-block;
-  background-color: #0f7373;
+  background-color: #000000;
   padding: 6px 15px;
   color: #fff;
 }
@@ -1088,16 +1119,18 @@ hr {
   padding: 0;
   width: 100%;
   height: auto;
-  background: url(images/event_back.jpg);
+  background: url(images/timerbg.jpeg);
   padding: 100px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .s-ctn {
   width: 70%;
   height: 450px;
   margin: auto;
-  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
-  border: 2px solid black;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(4, 9, 1, 0.2));
+  border: 1px solid rgb(211, 209, 209);
   padding: 20px;
   position: relative;
   border-radius: 5px;
@@ -1119,7 +1152,7 @@ hr {
   font-size: 16px;
   text-align: center;
   margin-top: 20px;
-  color: rgb(85, 235, 80);
+  color: rgb(255, 255, 255);
 }
 
 .main1 {
@@ -1272,7 +1305,7 @@ hr {
   content: "";
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -1390,14 +1423,14 @@ hr {
 .qa-container {
   margin: 20px 0 0 0;
   padding: 0;
-  color: #182C61;
+  color: #000000;
   height: auto;
   padding: 30px;
 }
 
 .heading h1 {
   text-align: center;
-  color: #e2a32e;
+  color: #000000;
 }
 
 .qa-box {
@@ -1422,16 +1455,6 @@ hr {
   cursor: pointer;
 }
 
-.answer {
-  margin-top: 10px;
-  position: static;
-  background: #f1f1f1;
-  padding: 20px;
-  color: #3B3B98;
-  display: none;
-  z-index: 1;
-}
-
 .answer ul {
   padding: 0 30px 0 30px;
 }
@@ -1440,8 +1463,26 @@ hr {
   margin-top: 20px;
 }
 
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease, padding 1s ease;
+}
+
 .show {
-  display: block;
+  max-height: 500px; /* Adjust as needed based on content height */
+  padding: 10px; /* Add space around the content */
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  padding-left: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.question {
+  cursor: pointer;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  padding: 10px;
+  padding-left: 10px !important;
 }
 
 @media (max-width: 700px) {
@@ -1452,4 +1493,80 @@ hr {
     font-size: 14px;
     padding: 15px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/* Gradient Mix */
+/* Gradient Text */
+/* Gradient Text with Animation */
+.gradient-text {
+  font-size: 50px !important;
+  font-weight: bold;
+  background: linear-gradient(45deg, white, white, rgb(0, 0, 0), white, white);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin: 20px;
+  animation: fluidGradient 10s ease infinite;
+}
+
+/* Animated Keyframes */
+@keyframes fluidGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.gradient-text3 {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, rgb(0, 0, 0), white);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin: 20px;
+  animation: fluidGradient 5s ease 1;
+}
+
+/* Animated Keyframes */
+@keyframes fluidGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.gradient {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, white, white, rgb(0, 0, 0), white, white);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin: 20px;
+  animation: fluidGradient 10s ease infinite;
+}
+
+/* Animated Keyframes */
+@keyframes fluidGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*new banner*//*# sourceMappingURL=main.css.map */
