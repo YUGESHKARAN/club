@@ -16,7 +16,7 @@ body{
     background: #ffffff;
    
 }
-.text
+
 html::-webkit-scrollbar{
     width:10px;
 }
@@ -129,28 +129,12 @@ nav .nav-links{
     position: relative;
 }
 
-// .nav-links ul li a{
-    // text-decoration: none;
-    // color: var(--white);
-    // font-size: 18px;
-// }
 .nav-links ul li a{
-    background-image: linear-gradient(
-      to right,
-      #8c8c8c,
-      #b2b2b2 50%,
-      #ffffff 50%
-    );
-    background-size: 200% 100%;
-    background-position: -100%;
-    display: inline-block;
-    padding: 5px 0;
-    position: relative;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
-  }
-  
+    text-decoration: none;
+    color:#fff !important;
+    font-size: 18px;
+}
+
   .nav-links ul li a:before{
     content: '';
     background: #ffd75e;
@@ -287,15 +271,7 @@ nav .fa{
    
 }
 
-@media (max-width:800px) {
-    .university{
-        font-size: 12px;
-        // text-wrap: wrap;
-        // width: 40%;
-        margin-left: 10px;
-    }
-    
-}
+
 @media (max-width:950px) {
     .nav-links ul li{
         display: block;
@@ -307,7 +283,7 @@ nav .fa{
         
         background: var(--blue);
         a{
-        color:var(--white)
+        color:black;
         }
     }
     .nav-links{
@@ -327,9 +303,10 @@ nav .fa{
        font-weight: 550;
        transition: 0.5s;
        margin-bottom: 30px;
-        a{
-        color: rgb(3, 3, 86);
-        }
+        
+    }
+    .nav-links ul li a{
+        color: black !important;
     }
     
      nav .fa{
@@ -349,18 +326,25 @@ nav .fa{
     .nav-links ul{
        padding: 30px;
     }
+    
     .text marquee{
         font-size: 10px;
     }
+
     
 }
 @media(max-width: 700px){
     *{
         overflow-x: hidden !important;
     }
+    .gradient-text{
+        font-size: 22px !important;
+       
+        
+    }
 
     .logo{
-        width: 70px;
+        width: 90px;
         padding-left: 40px;
         border:none !important;
         border-radius: 0 !important;
@@ -422,6 +406,7 @@ nav .fa{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+
 }
 
 .course-col{
@@ -479,6 +464,10 @@ nav .fa{
         width: 100%;
         h1{
             font-size: 25px;
+        }
+        .rows{
+            height: fit-content;
+            overflow-y: hidden !important;
         }
     }
 }
@@ -801,7 +790,7 @@ nav .fa{
 @media(max-width: 700px){
     .sub-header h1{
         font-size: 24px;
-        margin-top: 100px;
+        margin-top: 20px;
     }
     .about-col.two{
 
@@ -1336,19 +1325,7 @@ hr{
         font-size: 14px;
     }
 }
-//-------blg content Ends-------------
 
-@media(max-width: 500px){
-    .sub-header{
-
-       background: url(images/400_2.jpg);
-       background-position: top;
-       background-repeat: no-repeat;
-       background-size: cover;
-       
-    }
-   
-}
 
 //-----comming soon style section starts------
 
@@ -1830,7 +1807,7 @@ hr{
 /* Gradient Text */
 /* Gradient Text with Animation */
 .gradient-text {
-    font-size:50px !important;
+    font-size:50px ;
     font-weight: bold;
     // background: linear-gradient(45deg,white,white,rgb(0, 0, 0),white,white);
     background: linear-gradient(45deg,white,white,rgb(0, 0, 0),white,white);
@@ -1931,4 +1908,12 @@ hr{
       background-position: 0% 50%;
     }
   }
+
   /*new banner*/
+
+  @media(max-width:700px){
+    .gradient-text3 {
+        font-size: 25px;
+
+    }
+  }

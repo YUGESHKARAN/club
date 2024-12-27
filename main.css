@@ -20,7 +20,7 @@ body {
   background: #ffffff;
 }
 
-.text html::-webkit-scrollbar {
+html::-webkit-scrollbar {
   width: 10px;
 }
 
@@ -101,15 +101,9 @@ nav .nav-links {
 }
 
 .nav-links ul li a {
-  background-image: linear-gradient(to right, #8c8c8c, #b2b2b2 50%, #ffffff 50%);
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  padding: 5px 0;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: #fff !important;
+  font-size: 18px;
 }
 
 .nav-links ul li a:before {
@@ -219,12 +213,6 @@ nav .fa {
   display: none;
 }
 
-@media (max-width: 800px) {
-  .university {
-    font-size: 12px;
-    margin-left: 10px;
-  }
-}
 @media (max-width: 950px) {
   .nav-links ul li {
     display: block;
@@ -236,7 +224,7 @@ nav .fa {
     background: var(--blue);
   }
   .nav-links ul :hover a {
-    color: var(--white);
+    color: black;
   }
   .nav-links {
     position: fixed;
@@ -257,7 +245,7 @@ nav .fa {
     margin-bottom: 30px;
   }
   .nav-links ul li a {
-    color: rgb(3, 3, 86);
+    color: black !important;
   }
   nav .fa {
     display: block;
@@ -284,8 +272,11 @@ nav .fa {
   * {
     overflow-x: hidden !important;
   }
+  .gradient-text {
+    font-size: 22px !important;
+  }
   .logo {
-    width: 70px;
+    width: 90px;
     padding-left: 40px;
     border: none !important;
     border-radius: 0 !important;
@@ -379,6 +370,11 @@ nav .fa {
   }
   .course h1 {
     font-size: 25px;
+  }
+  .course .rows {
+    height: -moz-fit-content;
+    height: fit-content;
+    overflow-y: hidden !important;
   }
 }
 @media (max-width: 500px) {
@@ -643,7 +639,7 @@ nav .fa {
 @media (max-width: 700px) {
   .sub-header h1 {
     font-size: 24px;
-    margin-top: 100px;
+    margin-top: 20px;
   }
   .about-col.two {
     padding-top: 30px;
@@ -1106,14 +1102,6 @@ hr {
     font-size: 14px;
   }
 }
-@media (max-width: 500px) {
-  .sub-header {
-    background: url(images/400_2.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
 .soon-container {
   margin: 0;
   padding: 0;
@@ -1498,7 +1486,7 @@ hr {
 /* Gradient Text */
 /* Gradient Text with Animation */
 .gradient-text {
-  font-size: 50px !important;
+  font-size: 50px;
   font-weight: bold;
   background: linear-gradient(45deg, white, white, rgb(0, 0, 0), white, white);
   background-size: 400% 400%;
@@ -1569,4 +1557,9 @@ hr {
     background-position: 0% 50%;
   }
 }
-/*new banner*//*# sourceMappingURL=main.css.map */
+/*new banner*/
+@media (max-width: 700px) {
+  .gradient-text3 {
+    font-size: 25px;
+  }
+}/*# sourceMappingURL=main.css.map */
