@@ -25,7 +25,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background: rgb(164, 2, 2);
+  background: rgb(255, 255, 255);
 }
 
 html::-webkit-scrollbar-thumb {
@@ -44,7 +44,7 @@ html::-webkit-scrollbar-thumb {
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(images/ban1.jpeg);
+  background-image: linear-gradient(rgba(156, 156, 156, 0), rgba(0, 0, 0, 0)), url(images/blackk.jpeg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -54,10 +54,10 @@ html::-webkit-scrollbar-thumb {
 
 @keyframes zoomIn {
   0% {
-    background-size: 2000%;
+    background-size: 100%;
   }
   100% {
-    background-size: 180%; /* Adjust as needed for the zoom level */
+    background-size: 130%; /* Adjust as needed for the zoom level */
   }
 }
 nav {
@@ -318,6 +318,8 @@ nav .fa {
   grid-template-columns: repeat(4, 4fr);
   grid-gap: 50px;
   margin: 25px auto;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .rows {
