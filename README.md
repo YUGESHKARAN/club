@@ -63,7 +63,7 @@ For more information or support, please contact:
 - **Entrepreneurship and Pre-Incubation Cell**
 - Dhanalakshmi Srinivasan University
 - [Official University Website](https://dsuniversity.ac.in/)  
-- (Add email or contact form link if available)
+
 
 ---
 
